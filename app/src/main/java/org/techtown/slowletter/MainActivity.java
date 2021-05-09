@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageView inbox = (ImageView)findViewById(R.id.inbox_button);
+        Button write = (Button)findViewById(R.id.button4);
         inbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,5 +24,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        write.setOnClickListener((new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(),WriteLetter.class);
+                startActivity(intent);
+            }
+        }));
     }
 }
