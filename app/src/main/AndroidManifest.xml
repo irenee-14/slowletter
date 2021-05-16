@@ -19,6 +19,8 @@
         <activity android:name=".InboxList"/>
         <activity android:name=".InboxView"/>
         <activity android:name=".Setting_view"/>
+
+        <activity android:name=".WriteLetter"/>
     </application>
 
 </manifest>
