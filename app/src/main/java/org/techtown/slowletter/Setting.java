@@ -93,7 +93,6 @@ public class Setting extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.setting, rootKey);
 
-        //진동과 소리중 하나만 선택할 수 있도록 만들기
         SwitchPreferenceCompat Sound = findPreference("sound");
         SwitchPreferenceCompat Vibrate = findPreference("vibrate");
 
@@ -117,7 +116,7 @@ public class Setting extends PreferenceFragmentCompat {
         });
     }
 
-
+    
     public static class MyPreferenceFragment extends PreferenceFragment {
         @Override
         public void onCreate(final Bundle savedInstanceState){

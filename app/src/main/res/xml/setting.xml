@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="Privacy"
+        app:title="개인정보 수정"
+        app:iconSpaceReserved="false">
+        <EditTextPreference
+            app:defaultValue="true"
+            app:key="edit_nickname"
+            app:title="닉네임 변경"
+            app:summary="닉네임을 변경할 수 있습니다."/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="notifications_category"
+        app:title="알림설정"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            app:key="vibrate"
+            app:title="진동 알림"
+            app:summaryOn="진동으로 알림을 받습니다."
+            app:summaryOff="진동으로 알림을 받지 않습니다."
+            app:defaultValue="true"
+            app:enabled="true"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreferenceCompat
+            app:key="sound"
+            app:title="소리 알림"
+            app:summaryOn="소리로 알림을 받습니다."
+            app:summaryOff="소리로 알림을 받지 않습니다."
+            app:defaultValue="false"
+            app:enabled="true"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreferenceCompat
+            app:key="push_notification"
+            app:title="푸시 알림"
+            app:summaryOn="푸시알림을 받습니다."
+            app:summaryOff="푸시알림을 받지 않습니다."
+            app:defaultValue="false"
+            app:enabled="true"
+            app:iconSpaceReserved="false"/>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
